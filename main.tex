@@ -1,0 +1,85 @@
+%File: formatting-instruction.tex
+\documentclass[letterpaper]{article}
+\usepackage{aaai}
+% \usepackage{times}
+% \usepackage{helvet}
+% \usepackage{courier}
+ \usepackage{subfigure}
+\usepackage{color}
+\usepackage{balance}  % for  \balance command ON LAST PAGE 
+\usepackage{graphicx}
+\usepackage{epstopdf}  % used for generating pdf 
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[compress]{cite}
+\usepackage{amsfonts} 
+
+\usepackage{amsthm}
+
+\usepackage{caption}
+\usepackage{color}
+\usepackage[ruled]{algorithm}
+\usepackage{algorithmic}
+
+
+
+
+\newcommand{\ie}[0]{\textit{i.e.}}
+\newcommand{\eg}[0]{\textit{e.g.}}
+\newcommand{\etal}[0]{\textit{et al.}}
+\newcommand{\wrt}[0]{\textit{w.r.t.}}
+
+
+\newcommand{\keobf}{\textit{$(k,\epsilon)$-obf}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\genobf}{\texttt{\textbf{genObf}}}
+\newcommand{\ere}{$\mathcal{E}RR-$eval}
+\newcommand{\pg}{\mathcal{G}}
+\newcommand{\Constraint}{$\mathcal{C}$}
+\newcommand{\Number}{\|v\|}
+
+
+\theoremstyle{plain}
+\newtheorem{definition}{Definition}
+\newtheorem{problem}{Problem}
+\newtheorem{example}{Example}
+\newtheorem{observation}{Observation}
+\newtheorem{lemma}{Lemma}
+
+\newcommand{\methodName}{Squid}
+\newcommand{\capMethodName}{SQUID}
+\newcommand{\soaName}{Obf}
+\frenchspacing
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+\pdfinfo{
+/Title (Sharing Uncertain Graphs with Syntactic Anonymity)
+/Author (Put All Your Authors Here, Separated by Commas)}
+\setcounter{secnumdepth}{0}  
+ \begin{document}
+% The file aaai.sty is the style file for AAAI Press 
+% proceedings, working notes, and technical reports.
+%
+\title{Sharing Uncertain Graphs with Syntactic Anonymity}
+% \author{AAAI Press\\
+% Association for the Advancement of Artificial Intelligence\\
+% 2275 East Bayshore Road, Suite 160\\
+% Palo Alto, California 94303\\
+% }
+\maketitle
+\begin{abstract}
+\begin{quote}
+\end{quote}
+\end{abstract}
+\input{intro.tex}
+\input{relates.tex}
+\input{notation.tex}
+\input{state_of_art.tex}
+\input{squid.tex}
+\input{squid_ex/exp.tex}
+\input{conclusion.tex}
+% \bibliographystyle{abbrv}
+% \bibliography{refs.bib} 
+\end{document}
